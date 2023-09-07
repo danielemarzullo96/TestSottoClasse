@@ -1,11 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
- package com.mycompany.testsottoclasse;
+
+   
+           
+         
+
+package com.mycompany.testsottoclasse;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-
+import java.text.ParseException;
 /**
  * .
  *
@@ -22,11 +23,12 @@ public class Persona {
    {
        this.Nome=_Nome;
        this.Cognome=_Cognome;
-       SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/aaaa");
+       
        try{
+           SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
            DataNascita=sdf.parse(_DataNascita);
        }
-       catch(Exception e)
+       catch(ParseException e)
        {
            System.out.println("Errore nel formato della data");
        }
@@ -80,6 +82,13 @@ return tmp;
 }
 
 }
+
+        
+
+
+
+
+
 
         
 
