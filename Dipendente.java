@@ -1,4 +1,6 @@
-package com.mycompany.testsottoclasse;
+
+       
+   package com.mycompany.testsottoclasse;
 import java.util.Date;
 
 /*
