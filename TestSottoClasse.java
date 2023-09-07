@@ -1,12 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.testsottoclasse;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.text.ParseException;
 
 /**
  *
@@ -92,11 +89,11 @@ public class TestSottoClasse {
         Persona p=new Persona(nome, cognome, Data);
         Date dt=null;
         System.out.println(p.toString());
-         SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/aaaa");
        try{
+           SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
            dt=sdf.parse(Data);
        }
-       catch(Exception e)
+       catch(ParseException e)
        {
            System.out.println("Errore nel formato della data");
        }
